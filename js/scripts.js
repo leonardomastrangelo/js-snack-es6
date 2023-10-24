@@ -3,64 +3,23 @@
 */
 // list of vip guests
 vipList = [ 'Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni', 'Fedez', 'George Clooney', 'Amal Clooney', 'Maneskin'];
+let place = 0
+let table = "Vip Table"
+let nameVip = ""
 
-//todo  make every guest an object with 3 proprerties
-const vips = 
-[
-    {
-        tableNumber : "Vip table",
-        vipName : "Brad Pitt",
-        place : 1
-    },
-    {
-        tableNumber : "Vip table",
-        vipName : "Johnny Depp",
-        place : 2
-    },
-    {
-        tableNumber : "Vip table",
-        vipName : "Lady Gaga",
-        place : 3
-    },
-    {
-        tableNumber : "Vip table",
-        vipName : "Cristiano Ronaldo",
-        place : 4
-    },
-    {
-        tableNumber : "Vip table",
-        vipName : "Georgina Rodriguez",
-        place : 5
-    },
-    {
-        tableNumber : "Vip table",
-        vipName : "Chiara Ferragni",
-        place : 6
-    },
-    {
-        tableNumber : "Vip table",
-        vipName : "Fedez",
-        place : 7
-    },
-    {
-        tableNumber : "Vip table",
-        vipName : "George Clooney",
-        place : 8
-    },
-    {
-        tableNumber : "Vip table",
-        vipName : "Amal Clooney",
-        place : 9
-    },
-    {
-        tableNumber : "Vip table",
-        vipName : "Maneskin",
-        place : 10
-    },
-]
-//todo  print every new array of vips' object
-console.log(vips);
-vips.forEach((element)=> console.log(element))
+// making every guest an object
+const vipz = []
+vipList.forEach((vip,index)=>
+{
+    let person = {}
+    person.nameVip = vip
+    person.placeNum = index + 1
+    person.table = table
+    vipz.push(person)
+} 
+)
+console.log(vipz);
+
 
 /**
  * * SNACK 2 *
