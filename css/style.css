@@ -1,0 +1,9 @@
+#snack-1 {
+    background-color: #344e41;
+}
+
+.col-lg-5 {
+    background-image: url(../img/ticket.jpg);
+    background-size: cover;
+    background-position: center;
+}
