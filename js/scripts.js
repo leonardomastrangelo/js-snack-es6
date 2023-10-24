@@ -107,9 +107,8 @@ StudentsUp70.forEach((stup)=> {
     colUp70.innerHTML +=
     `
     <h2>${stup.studentName}</h2>
-    <h2>${stup.grades}</h2>
+    <h2>Grade : ${stup.grades}</h2>
     `
-
 })
 StudentsUp70ID120.forEach((stbo)=> {
     colBoth.innerHTML +=
