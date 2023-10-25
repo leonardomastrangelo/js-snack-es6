@@ -121,50 +121,58 @@ StudentsUp70ID120.forEach((stbo) => {
  * * SNACK 3 *
 */
 //todo << Create an array of objects with proprerties-> "name", "weight"
+const min = 10;
+const max = 80;
 const cycles = 
 [
     {
         nome : "pippo",
-        weight : "27"
+        weight : getRndInteger(min,max)
     },
     {
         nome : "paperino",
-        weight : "50"
+        weight : getRndInteger(min,max)
     },
     {
         nome : "pluto",
-        weight : "24"
+        weight : getRndInteger(min,max)
     },
     {
         nome : "topolino",
-        weight : "74"
+        weight : getRndInteger(min,max)
     },
     {
         nome : "topolino",
-        weight : "10"
+        weight : getRndInteger(min,max)
     },
     {
         nome : "minnie",
-        weight : "46"
+        weight : getRndInteger(min,max)
     },
     {
         nome : "tony",
-        weight : "67"
+        weight : getRndInteger(min,max)
     },
     {
         nome : "mario",
-        weight : "89"
+        weight : getRndInteger(min,max)
     },
     {
         nome : "giuseppe",
-        weight : "14"
+        weight : getRndInteger(min,max)
     },
 ]
 
-// take the lowest weight value
-const {nome,weight} = cycles[4]
-// print he lowest weight value in console
-console.log(nome,weight);
+// taking the first object of array as competitor
+let bike = cycles[0];
+// cycle the array in order to find the lowest value
+cycles.forEach((cycle)=> {
+    if (cycle.weight < bike.weight) {
+        bike = cycle
+    }
+})
+// print in console the value
+console.log(bike);
 // .row from html
 const row3 = document.querySelector("#snack-3 .row");
 // printing lowest weight value in html
@@ -176,18 +184,29 @@ function printCycle() {
         <h2 class="display-1 mb-5">Cycle with lowest weight</h2>
         <div class="bg-light rounded-top-3 pt-3">
             <span class="display-5">Cycle : </span>
-            <span class="display-3">${nome}</span>
+            <span class="display-3">${bike.nome}</span>
         </div> 
         <div class="bg-light rounded-bottom-3 pb-3">
             <span class="display-5">Weight : </span>
-            <span class="display-3">${weight}kg</span>
+            <span class="display-3">${bike.weight}kg</span>
         </div> 
     </div>
     `
     row3.innerHTML += template
 }
 
-
+/**
+ * * SNACK 4 *
+*/
+// //todo << Create an array of objects with proprerties-> "name", "points", "fouls"
+// const teams = 
+// [
+//     {
+//         name : "ac milan",
+//         points : getRndInteger(),
+//         fouls
+//     }
+// ]
 
 
 
