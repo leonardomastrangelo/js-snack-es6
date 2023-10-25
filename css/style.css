@@ -14,6 +14,15 @@
 #snack-1 {
     background-color: #344e41;
 }
+#snack-2 {
+    background-color: var(--emerald);
+}
+#snack-3 {
+    background-color: var(--indigo-dye);
+}
+#snack-4 {
+    background-color: var(--mindaro);
+}
 
 .col-lg-5 {
     background-image: url(../img/ticket.jpg);
@@ -35,3 +44,7 @@
     padding: 30px;
     border-radius: 30px;
 }
+
+#snack-4 .col-5 {
+    background-color: var(--lapis-lazuli);
+} 

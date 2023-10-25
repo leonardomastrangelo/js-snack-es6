@@ -199,17 +199,97 @@ function printCycle() {
  * * SNACK 4 *
 */
 // //todo << Create an array of objects with proprerties-> "name", "points", "fouls"
-// const teams = 
-// [
-//     {
-//         name : "ac milan",
-//         points : getRndInteger(),
-//         fouls
-//     }
-// ]
+const teams = 
+[
+    {
+        name : "milan",
+        points : getRndInteger(1,70),
+        fouls : getRndInteger(1,20)
+    },
+    {
+        name : "juventus",
+        points : getRndInteger(1,70),
+        fouls : getRndInteger(1,20)
+    },
+    {
+        name : "inter",
+        points : getRndInteger(1,70),
+        fouls : getRndInteger(1,20)
+    },
+    {
+        name : "sassuolo",
+        points : getRndInteger(1,70),
+        fouls : getRndInteger(1,20)
+    },
+    {
+        name : "monza",
+        points : getRndInteger(1,70),
+        fouls : getRndInteger(1,20)
+    },
+    {
+        name : "torino",
+        points : getRndInteger(1,70),
+        fouls : getRndInteger(1,20)
+    },
+    {
+        name : "empoli",
+        points : getRndInteger(1,70),
+        fouls : getRndInteger(1,20)
+    },
+    {
+        name : "fiorentina",
+        points : getRndInteger(1,70),
+        fouls : getRndInteger(1,20)
+    },
+    {
+        name : "sampdoria",
+        points : getRndInteger(1,70),
+        fouls : getRndInteger(1,20)
+    },
+    {
+        name : "roma",
+        points : getRndInteger(1,70),
+        fouls : getRndInteger(1,20)
+    }
+]
+
+// creation of array with only 2 proprerties -> "name", "fouls"
+const newTeams = teams.map((team,index)=> {
+    // destructuring every team
+    const {name, fouls} = teams[index]
+    const newTeam = {
+        name,
+        fouls,
+    }
+    return newTeam
+})
+
+// print in console the new array
+console.log(newTeams);
+
+// .row from html
+const row4 = document.querySelector("#snack-4 .row");
+
+// printing every team in html
+newTeams.forEach((team)=> {
+    let template = 
+    `
+    <div class="col-5 p-5 mb-5 rounded-5">
+        <div class="mb-4">
+            <h3>Team</h3>
+            <span class="display-2">${team.name}</span>
+        </div>
+        <div>
+            <h3>Fouls</h3>
+            <span class="display-2">${team.fouls}</span>
+        </div>
+    </div>
+    `
+    row4.innerHTML += template
+})
 
 
-
+// function to get rnd integer
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
