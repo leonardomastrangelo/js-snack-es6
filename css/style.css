@@ -1,3 +1,16 @@
+:root {
+    --mindaro: #d9ed92ff;
+    --light-green: #b5e48cff;
+    --light-green-2: #99d98cff;
+    --emerald: #76c893ff;
+    --keppel: #52b69aff;
+    --verdigris: #34a0a4ff;
+    --bondi-blue: #168aadff;
+    --cerulean: #1a759fff;
+    --lapis-lazuli: #1e6091ff;
+    --indigo-dye: #184e77ff;
+}
+
 #snack-1 {
     background-color: #344e41;
 }
@@ -9,9 +22,16 @@
 }
 
 
-#snack-2 .col-xl-4{
+#snack-2 .col-xl-4 {
     padding: 30px 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
+
+#snack-3 .col-5 {
+    background-color: var(--verdigris);
+    text-align: center;
+    padding: 30px;
+    border-radius: 30px;
 }
