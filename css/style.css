@@ -24,12 +24,11 @@
     background-color: var(--mindaro);
 }
 
-.col-lg-5 {
+#snack-1 .col-lg-5 {
     background-image: url(../img/ticket.jpg);
     background-size: cover;
     background-position: center;
 }
-
 
 #snack-2 .col-xl-4 {
     padding: 30px 0;
@@ -38,13 +37,13 @@
     justify-content: flex-start;
 }
 
-#snack-3 .col-5 {
+#snack-3 .col-10 {
     background-color: var(--verdigris);
     text-align: center;
     padding: 30px;
     border-radius: 30px;
 }
 
-#snack-4 .col-5 {
+#snack-4 .col-10 {
     background-color: var(--lapis-lazuli);
 } 

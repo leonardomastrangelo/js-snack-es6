@@ -120,7 +120,7 @@ StudentsUp70ID120.forEach((stbo) => {
 /**
  * * SNACK 3 *
 */
-//todo << Create an array of objects with proprerties-> "name", "weight"
+//todo << Create an array of objects with proprerties-> "name", "weight" >>
 const min = 10;
 const max = 80;
 const cycles = 
@@ -180,7 +180,7 @@ printCycle()
 function printCycle() {
     let template = 
     `
-    <div class="col-5">
+    <div class="col-10 col-xl-5">
         <h2 class="display-1 mb-5">Cycle with lowest weight</h2>
         <div class="bg-light rounded-top-3 pt-3">
             <span class="display-5">Cycle : </span>
@@ -198,7 +198,7 @@ function printCycle() {
 /**
  * * SNACK 4 *
 */
-// //todo << Create an array of objects with proprerties-> "name", "points", "fouls"
+// //todo << Create an array of objects with proprerties-> "name", "points", "fouls" >>
 const teams = 
 [
     {
@@ -274,7 +274,7 @@ const row4 = document.querySelector("#snack-4 .row");
 newTeams.forEach((team)=> {
     let template = 
     `
-    <div class="col-5 p-5 mb-5 rounded-5">
+    <div class="col-10 col-lg-5 p-5 mb-5 rounded-5">
         <div class="mb-4">
             <h3>Team</h3>
             <span class="display-2">${team.name}</span>
