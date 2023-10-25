@@ -39,7 +39,6 @@ function printTicket(name,placeNum,tableType) {
     row.innerHTML += template
 }
 
-
 /**
  * * SNACK 2 *
 */
@@ -117,3 +116,7 @@ StudentsUp70ID120.forEach((stbo)=> {
     <h2>ID : ${stbo.studentID}</h2>
     `
 })
+
+/**
+ * * SNACK 3 *
+*/
